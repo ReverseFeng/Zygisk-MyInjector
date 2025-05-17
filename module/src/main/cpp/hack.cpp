@@ -79,7 +79,7 @@ void load_so(const char *game_data_dir, JavaVM *vm, const char *soname) {
             load = true;
             char new_soname[256];
             sprintf(new_soname, "%s.so", soname);
-            riru_hide(new_soname);
+           // riru_hide(new_soname);
             break;
         } else {
             LOGE("Failed to load %s: %s", new_so_path, dlerror());
